@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/item_background"
+    android:elevation="2dp">
+
+    <!-- Event Name -->
+    <TextView
+        android:id="@+id/eventNameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event Name"
+        android:textSize="18sp"
+        android:textColor="#212121"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- Event Date -->
+    <TextView
+        android:id="@+id/eventDateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Event Date"
+        android:textSize="14sp"
+        android:textColor="#757575"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+    <!-- QR Code Button -->
+    <Button
+        android:id="@+id/displayQRButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Display QR"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_gravity="center_horizontal" />
+</LinearLayout>

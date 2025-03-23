@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".organiser.EditEventActivity"
+    android:padding="16dp">
+
+    <!-- Event Name -->
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/eventNameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Event Name"
+        android:importantForAccessibility="yes"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Event Description -->
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/eventDescriptionEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Event Description"
+        android:importantForAccessibility="yes"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@id/eventNameEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Event Location -->
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/eventLocationEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Event Location"
+        android:importantForAccessibility="yes"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@id/eventDescriptionEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Event Date -->
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/eventDateEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Event Date (e.g., yyyy-MM-dd)"
+        android:importantForAccessibility="yes"
+        android:minHeight="48dp"
+        android:focusable="false"
+        android:clickable="true"
+        app:layout_constraintTop_toBottomOf="@id/eventLocationEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Event Time -->
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/eventTimeEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Event Time (24:00 Format)"
+        android:importantForAccessibility="yes"
+        android:minHeight="48dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/eventDateEditText" />
+
+    <!-- Event Price -->
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/eventPriceEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Event Price"
+        android:importantForAccessibility="yes"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@id/eventTimeEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Event Capacity -->
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/eventCapacityEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Event Capacity"
+        android:importantForAccessibility="yes"
+        android:inputType="number"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@id/eventPriceEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Event Category Spinner -->
+    <Spinner
+        android:id="@+id/eventCategorySpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:importantForAccessibility="yes"
+        android:minHeight="48dp"
+        app:layout_constraintTop_toBottomOf="@id/eventCapacityEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:importantForAccessibility="yes"
+        app:layout_constraintTop_toBottomOf="@id/eventCategorySpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@android:color/white"
+        android:elevation="4dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

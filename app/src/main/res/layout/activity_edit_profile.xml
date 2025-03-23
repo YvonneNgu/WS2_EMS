@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- Profile Picture ImageView -->
+    <ImageView
+        android:id="@+id/profileImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:contentDescription="Profile Picture"
+        android:src="@drawable/user_profile"
+        android:padding="8dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- Edit Text for User's Name -->
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Full Name"
+        android:textSize="16sp"
+        android:minHeight="48dp"
+        android:background="?attr/selectableItemBackground"
+        android:paddingLeft="16dp" />
+
+    <!-- Edit Text for User's Email -->
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Email"
+        android:textSize="16sp"
+        android:minHeight="48dp"
+        android:background="?attr/selectableItemBackground"
+        android:paddingLeft="16dp" />
+
+    <!-- Edit Text for User's Phone Number -->
+    <EditText
+        android:id="@+id/phoneNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="?attr/selectableItemBackground"
+        android:hint="Phone Number"
+        android:minHeight="48dp"
+        android:paddingLeft="16dp"
+        android:textSize="16sp" />
+
+    <!-- Edit Text for User's Date of Birth -->
+    <EditText
+        android:id="@+id/dobEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Date of Birth"
+        android:textSize="16sp"
+        android:minHeight="48dp"
+        android:background="?attr/selectableItemBackground"
+        android:paddingLeft="16dp" />
+
+    <!-- Edit Text for User's Organization Name -->
+    <EditText
+        android:id="@+id/orgNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Organization Name"
+        android:textSize="16sp"
+        android:minHeight="48dp"
+        android:background="?attr/selectableItemBackground"
+        android:paddingLeft="16dp" />
+
+    <!-- Edit Text for User's Position -->
+    <EditText
+        android:id="@+id/positionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Position"
+        android:textSize="16sp"
+        android:minHeight="48dp"
+        android:background="?attr/selectableItemBackground"
+        android:paddingLeft="16dp" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Save" />
+
+</LinearLayout>

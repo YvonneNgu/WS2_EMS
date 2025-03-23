@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@android:color/white"
+    android:layout_marginBottom="8dp"
+    android:layout_gravity="center_vertical">
+
+    <!-- Number (Position) -->
+    <TextView
+        android:id="@+id/tvNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="18sp"
+        android:textColor="#6200EE"
+        android:layout_marginBottom="6dp"
+        android:layout_gravity="start"/>
+
+    <!-- User Information -->
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: John Doe"
+        android:textSize="16sp"
+        android:textColor="#212121"
+        android:layout_marginBottom="4dp"
+        android:paddingStart="16dp"/>
+
+    <TextView
+        android:id="@+id/tvUserIdCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IC Number: 123456789"
+        android:textSize="16sp"
+        android:textColor="#212121"
+        android:layout_marginBottom="4dp"
+        android:paddingStart="16dp"/>
+
+    <TextView
+        android:id="@+id/tvUserEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email: johndoe@example.com"
+        android:textSize="14sp"
+        android:textColor="#757575"
+        android:layout_marginBottom="4dp"
+        android:paddingStart="16dp"/>
+
+    <TextView
+        android:id="@+id/tvUserPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone: +60123456789"
+        android:textSize="14sp"
+        android:textColor="#757575"
+        android:layout_marginBottom="4dp"
+        android:paddingStart="16dp"/>
+
+    <!-- Status -->
+    <TextView
+        android:id="@+id/tvUserStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status: Present"
+        android:textSize="14sp"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_marginBottom="4dp"
+        android:paddingStart="16dp"/>
+
+    <!-- Mark Attendance Button -->
+    <Button
+        android:id="@+id/btnMarkAttendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Mark Attendance"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="end" />
+
+    <!-- Divider Line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"/>
+</LinearLayout>

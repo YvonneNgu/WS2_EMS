@@ -1,0 +1,135 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/background_light_purple"
+        android:scaleType="centerCrop" />
+
+    <!-- Foreground ScrollView -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="16dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="179dp"
+                android:layout_height="168dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="App logo"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Event Hive"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:paddingBottom="24dp"
+                android:textColor="@color/titleColor"
+                android:importantForAccessibility="yes"
+                android:contentDescription="Welcome to Event Hive" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="@color/cardBackgroundColor">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Email EditText -->
+                    <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edit_text"
+                        android:hint="Email"
+                        android:importantForAccessibility="yes"
+                        android:inputType="textEmailAddress"
+                        android:padding="12dp"
+                        android:textColor="@color/textColor"
+                        android:textColorHint="@color/hintColor"
+                        android:contentDescription="Email input field" />
+
+                    <EditText
+                        android:id="@+id/etPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/rounded_edit_text"
+                        android:hint="Password"
+                        android:importantForAccessibility="yes"
+                        android:inputType="textPassword"
+                        android:padding="12dp"
+                        android:textColor="@color/textColor"
+                        android:textColorHint="@color/hintColor"
+                        android:contentDescription="Password input field" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/rounded_button"
+                android:contentDescription="Login button"
+                android:importantForAccessibility="yes"
+                android:text="Login"
+                android:textColor="@color/buttonTextColor" />
+
+            <TextView
+                android:id="@+id/tvCreateAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Don't have an account? Create one"
+                android:textColor="@color/linkColor"
+                android:layout_marginTop="16dp"
+                android:contentDescription="Create account link"
+                android:importantForAccessibility="yes" />
+
+            <TextView
+                android:id="@+id/tvForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:contentDescription="Forgot Password link"
+                android:importantForAccessibility="yes"
+                android:text="Forgot Password?"
+                android:textColor="@color/linkColor" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

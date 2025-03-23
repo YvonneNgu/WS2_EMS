@@ -1,0 +1,48 @@
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0E00</color>
+    <color name="purple_500">#01F809</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="lavender">#8692f7</color>
+    <color name="backgroundColor">#F5F5F5</color>
+    <color name="titleColor">#000000</color>
+    <color name="textColor">#333333</color>
+    <color name="hintColor">#888888</color>
+    <color name="buttonBackground">#6200EE</color>
+    <color name="buttonTextColor">#FFFFFF</color>
+    <color name="editTextBackground">#FFFFFF</color>
+    <color name="linkColor">#1E88E5</color>
+    <color name="cardBackgroundColor">#FFFFFF</color><!-- Added gray color -->
+    <color name="gray">#808080</color> <!-- Light Gray -->
+    <color name="dark_gray">#505050</color> <!-- Dark Gray -->
+    //Luqman
+    <color name="default_purple">#9C27B0</color> <!-- Default button color -->
+    <color name="light_purple">#D1C4E9</color>  <!-- Hover color -->
+    <color name="dark_purple">#7B1FA2</color>   <!-- Pressed color -->
+    <color name="colorAttendance">#4CAF50</color> <!-- Green for attendance -->
+    <color name="colorCapacity">#FF5722</color> <!-- Orange for capacity -->
+    <color name="colorText">#000000</color> <!-- Black for bar text -->
+    <color name="colorPrimary">#4CAF50</color> <!-- Green for Participants Joined -->
+    <color name="colorSecondary">#FF5722</color> <!-- Orange for Capacity -->
+    <color name="colorRevenue">#FFC107</color> <!-- Yellow for Revenue -->
+    <color name="lightBackground">#F7F9FC</color>
+    <color name="cardBackground">#FFFFFF</color>
+    <color name="background_color">#F5F5F5</color> <!-- Light gray background -->
+    <color name="gold">#FFD700</color> <!-- Gold color -->
+    <color name="silver">#C0C0C0</color>
+    <color name="bronze">#CD7F32</color>
+    <color name="primaryColor">#6200EE</color>
+    <color name="dividerColor">#464646</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="transparent">#00000000</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color> <!-- Define colorAccent here -->
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="subtitleColor">#757575</color>
+    // Yvonne
+    <color name="menu_purple">#6750A4</color> <!-- dark gray purple for menu -->
+</resources>

@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Workshop2</string>
+    <string name="home">Home</string>
+    <string name="notification">Notification</string>
+    <string name="settings">Settings</string>
+    <string-array name="event_categories">
+        <item>All Categories</item>
+        <item>Workshop</item>
+        <item>Conference</item>
+        <item>Seminar</item>
+        <item>Webinar</item>
+    </string-array>
+    <string-array name="certificate_types">
+        <item>Participation</item>
+        <item>Achievement</item>
+        <item>General</item>
+    </string-array>
+    <string-array name="certificate_items">
+        <item>Certificate Type</item>
+        <item>Header</item>
+        <item>Recipient Name</item>
+        <item>Reason for Certificate</item>
+        <item>Achievement</item>
+        <item>Event Name</item>
+        <item>Event Date</item>
+        <item>Issuer Name</item>
+        <item>Issue Date</item>
+    </string-array>
+    <string name="open_nav">Open Navigation</string>
+    <string name="close_nav">Close Navigation</string>
+    <string name="event">Event</string>
+    <string name="profile">Profile</string>
+    <string name="chat">Chat</string>
+    <string name="chart">Chart</string>
+    <string name="analytics">Analytics</string>
+    <string-array name="chart_options">
+        <item>Participation Trends</item>
+        <item>Event Categories</item>
+    </string-array>
+</resources>

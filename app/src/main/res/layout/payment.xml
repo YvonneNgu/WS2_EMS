@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Wallet Balance TextView -->
+    <TextView
+        android:id="@+id/balance_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        android:text="Wallet Balance: RM0.00"
+        android:textSize="18sp" />
+
+    <!-- Top-Up Amount Input -->
+    <EditText
+        android:id="@+id/top_up_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="Enter amount to top up"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp" />
+
+    <!-- Top-Up Button -->
+    <Button
+        android:id="@+id/button_top_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Top Up" />
+
+    <!-- RecyclerView for Card List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/card_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="395dp"
+        android:layout_weight="1" />
+
+    <!-- Success Animation -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/success_animation"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/success_animation" />
+
+    <!-- Failure Animation -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/fail_animation"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/fail_animation" />
+
+    <!-- Add/Remove Card Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/removeCardButton"
+            android:layout_width="74dp"
+            android:layout_height="57dp"
+            android:layout_marginEnd="16dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Remove Card"
+            android:scaleType="centerInside"
+            android:src="@drawable/card_remove" />
+
+        <ImageButton
+            android:id="@+id/addCardButton"
+            android:layout_width="75dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="16dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="Add Card"
+            android:scaleType="centerInside"
+            android:src="@drawable/add_payment_card" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,28 @@
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:ordering="sequentially"
+    android:fillAfter="true">
+
+    <!-- Rotate animation -->
+    <rotate
+        android:duration="1500"
+        android:fromDegrees="0"
+        android:toDegrees="360"
+        android:pivotX="50%"
+        android:pivotY="50%" />
+
+    <!-- Scale (zoom in) animation -->
+    <scale
+        android:duration="2000"
+        android:fromXScale="0.5"
+        android:fromYScale="0.5"
+        android:toXScale="1.5"
+        android:toYScale="1.5"
+        android:pivotX="50%"
+        android:pivotY="50%" />
+
+    <!-- Fade-out animation -->
+    <alpha
+        android:duration="2100"
+        android:fromAlpha="1.0"
+        android:toAlpha="0.0" />
+</set>
